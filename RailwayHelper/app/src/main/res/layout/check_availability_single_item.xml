@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="3dp"
+    app:cardCornerRadius="3dp"
+    android:clickable="true"
+    app:cardBackgroundColor="#f1f1f1"
+    app:cardElevation="3dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/ca_trainName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Train Name"
+                android:textColor="#3f3f3f"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/ca_trainID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="  (XXXXX)"
+                android:textColor="#3f3f3f"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/ca_sourceStn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FromStationID"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  ---->  "
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/ca_destinationStn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ToStationID"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/ca_arrivalTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="XX:XX"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  -  "
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/ca_departureTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="XX:XX"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/ca_trainType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Train Type"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="9">
+
+            <Button
+                android:id="@+id/ca_checkStatusBtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Check \nStatus"
+                android:textSize="12sp"
+                android:layout_weight="3"/>
+
+            <Button
+                android:id="@+id/ca_getFareBtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Get \nFare"
+                android:textSize="12sp"
+                android:layout_weight="3"/>
+
+            <Button
+                android:id="@+id/ca_bookTicketBtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Book \nTicket"
+                android:textSize="12sp"
+                android:layout_weight="3"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

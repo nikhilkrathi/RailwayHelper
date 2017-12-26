@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginBottom="12dp">
+
+    <TextView
+        android:id="@+id/gfdb_tv_trainName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Train name (TrainID)"
+        android:textColor="#000000"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/gfdb_tv_distance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Distance = XX kms"
+        android:layout_marginBottom="8dp"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/gfdb_tv_fareClass1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fare Class I = Rs. YY"
+        android:layout_marginBottom="8dp"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/gfdb_tv_fareClass2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fare Class II = Rs. YY"
+        android:layout_marginBottom="8dp"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/gfdb_tv_fareClass3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fare Class III = Rs. YY"
+        android:layout_marginBottom="8dp"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/gfdb_close_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:background="@android:color/transparent"
+        android:gravity="center|end"
+        android:layout_gravity="right"
+        android:text="CLOSE"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="14sp" />
+
+</LinearLayout>

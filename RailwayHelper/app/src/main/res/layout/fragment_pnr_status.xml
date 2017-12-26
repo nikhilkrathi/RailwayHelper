@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp">
+
+    <EditText
+        android:id="@+id/et_pnr_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter PNR Number"
+        android:inputType="number"
+        android:textSize="18sp"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/pn_tv_error"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:textColor="@android:color/holo_red_light"
+        android:text="error!"
+        android:gravity="center"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/b_find_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Find Details"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/tv_heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ticket Details"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:layout_marginLeft="8dp"
+        android:visibility="invisible"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/tv_train_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Train Number : N/A"
+        android:textSize="14sp"
+        android:visibility="invisible"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/tv_from"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="From : N/A"
+        android:textSize="14sp"
+        android:visibility="invisible"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/tv_to"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="To : N/A"
+        android:textSize="14sp"
+        android:visibility="invisible"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Date : N/A"
+        android:textSize="14sp"
+        android:visibility="invisible"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/tv_class"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Class : N/A"
+        android:textSize="14sp"
+        android:visibility="invisible"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/tv_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Status : N/A"
+        android:textSize="14sp"
+        android:visibility="invisible"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="8dp"/>
+
+</LinearLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginBottom="12dp">
+
+    <TextView
+        android:id="@+id/csdb_tv_trainName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Train name (TrainID)"
+        android:textColor="#000000"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/csdb_tv_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Date: DD/MM/YYYY"
+        android:layout_marginBottom="8dp"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/csdb_tv_statusClassI"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Status Class I = XX"
+        android:layout_marginBottom="8dp"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/csdb_tv_statusClassII"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Status Class II = XX"
+        android:layout_marginBottom="8dp"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/csdb_tv_statusClassIII"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Status Class I = XX"
+        android:layout_marginBottom="8dp"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/csdb_close_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:background="@android:color/transparent"
+        android:gravity="center|end"
+        android:layout_gravity="right"
+        android:text="CLOSE"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="14sp" />
+
+</LinearLayout>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="12dp">
+
+    <TextView
+        android:id="@+id/apd_trainNameNo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Train Name    (Number)"
+        android:textColor="#000000"
+        android:layout_marginBottom="8dp"
+        android:textSize="18sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_marginBottom="8dp">
+
+        <TextView
+            android:id="@+id/apd_FromStation"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="From : XXYYZZ"
+            android:layout_weight="1"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/apd_ToStation"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="To : ZZYYXX"
+            android:layout_weight="1"
+            android:textSize="14sp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/apd_doj"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DoJ - DD/MM/YYYY"
+        android:textSize="14sp"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Class"
+        android:textSize="14sp"/>
+
+    <RadioGroup
+        android:id="@+id/apd_class"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="12dp">
+
+        <RadioButton
+            android:id="@+id/apd_class1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="I" />
+
+        <RadioButton
+            android:id="@+id/apd_class2"
+            android:layout_weight="0.5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="II" />
+
+        <RadioButton
+            android:id="@+id/apd_class3"
+            android:layout_weight="0.5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="III" />
+
+    </RadioGroup>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/apd_recView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp">
+    </android.support.v7.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/apd_tv_error"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Invalid class"
+        android:visibility="gone"
+        android:textColor="@android:color/holo_red_light"/>
+
+    <Button
+        android:id="@+id/apd_b_addPassenger"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Passenger" />
+
+    <Button
+        android:id="@+id/apd_b_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Confirm and Book" />
+
+    <TextView
+        android:id="@+id/apd_tv_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Congrats, ticket booked successfully!"
+        android:visibility="gone"
+        android:textColor="#32CD32"/>
+
+    <TextView
+        android:id="@+id/apd_tv_pnr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="PNR: "
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/apd_b_done"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="save and exit"
+        android:visibility="gone"/>
+
+</LinearLayout>
